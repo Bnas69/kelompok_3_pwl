@@ -1,0 +1,51 @@
+Employee_ID,Age,Gender,Job_Role,Monthly_Income,Job_Satisfaction,Work_Life_Balance,Distance_From_Home_KM,Num_Projects,Avg_Monthly_Hours,Years_at_Company,Years_Since_Last_Promotion,Training_Times_Last_Year,Education_Level,Attrition_Risk_Level
+EMP-00001,28,Male,Manager,5873,2,4,20.5,5,193.6,4,4,2,2,1
+EMP-00002,45,Male,Data Scientist,11651,3,2,3.3,2,170.1,5,4,2,3,1
+EMP-00003,44,Female,Software Engineer,8936,4,3,17.3,8,164.4,6,3,6,1,0
+EMP-00004,22,Female,Data Scientist,6861,3,3,3.8,6,178.3,0,0,0,3,0
+EMP-00005,23,Female,Data Scientist,6209,4,1,5.6,6,130.4,1,0,3,5,0
+EMP-00006,21,Female,Sales Executive,4945,3,4,5.9,8,192.4,0,0,4,3,0
+EMP-00007,49,Female,Data Scientist,10642,3,4,6.4,2,225.9,6,6,2,2,1
+EMP-00008,35,Female,HR Specialist,10770,3,4,10.7,5,120.0,2,2,1,3,0
+EMP-00009,34,Female,Analyst,7998,2,1,17.5,2,221.0,0,0,6,3,1
+EMP-00010,39,Female,Sales Executive,6566,3,3,7.5,8,178.1,0,0,4,3,0
+EMP-00011,27,Female,Sales Executive,6785,3,2,4.2,8,163.6,3,1,1,5,0
+EMP-00012,33,Male,Manager,5940,2,1,16.4,6,245.9,4,0,2,3,2
+EMP-00013,25,Female,HR Specialist,6480,1,3,5.5,3,194.0,1,1,5,2,1
+EMP-00014,39,Male,Software Engineer,8236,2,3,3.7,7,189.4,15,2,6,4,1
+EMP-00015,27,Female,Manager,7484,4,1,14.5,5,232.9,4,3,0,3,1
+EMP-00016,37,Female,HR Specialist,10389,4,2,8.7,2,154.1,10,2,3,3,0
+EMP-00017,43,Female,Sales Executive,10253,4,1,14.4,8,120.0,7,6,4,1,1
+EMP-00018,34,Female,Manager,10636,2,4,16.8,3,250.0,4,0,4,3,1
+EMP-00019,41,Female,Software Engineer,11217,2,1,5.8,2,145.3,0,0,2,3,0
+EMP-00020,25,Male,Software Engineer,4903,4,3,7.6,5,123.1,3,1,3,1,0
+EMP-00021,25,Female,Software Engineer,7419,1,2,7.3,8,126.6,1,0,0,2,1
+EMP-00022,36,Female,Data Scientist,10888,2,3,7.2,3,163.8,2,0,4,3,0
+EMP-00023,33,Female,Sales Executive,9369,3,3,25.7,8,176.0,1,1,0,4,0
+EMP-00024,23,Female,Manager,7407,3,2,22.2,3,182.4,0,0,2,5,0
+EMP-00025,31,Male,Analyst,8602,4,1,10.2,3,131.4,10,8,5,1,1
+EMP-00026,44,Male,Sales Executive,8805,3,1,1.4,3,171.0,0,0,4,3,0
+EMP-00027,29,Female,Data Scientist,9077,3,4,6.3,4,199.3,8,2,5,3,0
+EMP-00028,35,Male,Software Engineer,9913,3,3,2.1,8,172.0,6,3,2,1,0
+EMP-00029,31,Female,Manager,8760,2,4,4.4,5,177.5,7,7,2,4,1
+EMP-00030,36,Female,Sales Executive,6928,4,2,6.6,2,181.8,0,0,3,3,0
+EMP-00031,37,Female,Data Scientist,9533,2,3,12.3,8,132.7,9,0,2,5,0
+EMP-00032,39,Male,Data Scientist,9550,4,2,9.9,7,175.7,15,5,4,1,1
+EMP-00033,39,Male,Data Scientist,7538,4,3,2.4,3,195.0,16,6,4,2,1
+EMP-00034,41,Male,Manager,8605,4,2,30.3,4,205.8,9,3,5,3,1
+EMP-00035,38,Male,Data Scientist,7381,3,2,4.6,4,185.2,10,1,1,3,0
+EMP-00036,36,Female,Manager,7237,3,3,33.4,5,178.9,13,5,4,3,1
+EMP-00037,30,Female,Software Engineer,8354,3,3,19.6,5,184.6,7,2,3,3,0
+EMP-00038,20,Male,HR Specialist,5387,4,2,3.1,5,163.2,0,0,3,3,0
+EMP-00039,31,Male,Manager,6156,1,3,5.6,2,172.7,8,5,5,5,2
+EMP-00040,28,Female,Analyst,6022,3,4,3.1,6,144.0,1,0,0,1,0
+EMP-00041,29,Male,Manager,7795,2,2,2.5,3,193.1,8,6,5,3,2
+EMP-00042,21,Female,Analyst,4881,2,3,16.2,3,158.4,0,0,2,4,0
+EMP-00043,41,Female,HR Specialist,8461,2,4,11.5,5,179.7,17,5,6,2,1
+EMP-00044,20,Female,Data Scientist,4414,3,3,18.5,7,190.1,0,0,1,5,0
+EMP-00045,38,Male,Sales Executive,10351,2,3,15.5,7,128.9,3,0,0,2,0
+EMP-00046,33,Male,HR Specialist,6329,4,3,5.2,4,186.8,2,0,4,2,0
+EMP-00047,38,Female,Data Scientist,6790,4,1,10.4,3,144.2,8,7,5,3,1
+EMP-00048,41,Female,Software Engineer,9514,3,2,9.6,3,209.5,17,16,1,2,2
+EMP-00049,51,Female,Manager,9173,2,3,1.9,5,181.5,12,4,2,3,1
+EMP-00050,45,Female,HR Specialist,8233,3,1,6.3,6,213.3,17,7,4,4,2
