@@ -56,6 +56,7 @@ php artisan hr:sync
 php artisan serve
 npm run dev
 ```
-<img width="1436" height="819" alt="Screenshot 2026-07-10 at 18 57 20" src="https://github.com/user-attachments/assets/d02890bb-2d4a-4cba-8296-00e1a79c2cdc" />
+<img width="1434" height="780" alt="Screenshot 2026-07-10 at 19 34 54" src="https://github.com/user-attachments/assets/f76b9239-0f22-4b17-8132-cf375446a380" />
+
 <img width="1433" height="784" alt="Screenshot 2026-07-10 at 19 21 34" src="https://github.com/user-attachments/assets/f0ea651a-d38b-4917-b778-6b37a6b2a35f" />
 
