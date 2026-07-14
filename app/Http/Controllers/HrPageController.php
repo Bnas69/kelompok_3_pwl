@@ -20,8 +20,11 @@ class HrPageController extends Controller
 
     public function employees(): View
     {
+        $filters = request()->all();
+        $filters['per_page'] = $filters['per_page'] ?? 10;
+
         return view('hr.employees', [
-            'employees' => $this->dashboard->paginatedEmployees(request()->all()),
+            'employees' => $this->dashboard->paginatedEmployees($filters),
             'filters' => $this->dashboard->filters(),
         ]);
     }
