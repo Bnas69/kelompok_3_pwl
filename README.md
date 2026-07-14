@@ -50,11 +50,11 @@ composer install
 cp .env.example .env
 php artisan key:generate
 npm install
+npm run dev
 php artisan migrate
 php artisan db:seed
 php artisan hr:sync
 php artisan serve
-npm run dev
 ```
 <img width="1434" height="780" alt="Screenshot 2026-07-10 at 19 34 54" src="https://github.com/user-attachments/assets/f76b9239-0f22-4b17-8132-cf375446a380" />
 
