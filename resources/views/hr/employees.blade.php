@@ -115,75 +115,102 @@
 
 @if ($isAdmin)
     {{-- Form Tambah/Update --}}
-    <div class="card-dashboard">
-        <div class="card-body">
-            <h2 class="card-title mb-3">Tambah / Update Data Karyawan</h2>
+    <div class="card-dashboard employee-form-card">
+        <div class="card-body p-4">
+            <div class="mb-4">
+                <h2 class="card-title mb-0">Tambah / Update Data Karyawan</h2>
+                <p class="card-subtitle mb-0">Lengkapi data di bawah ini untuk menambah atau memperbarui karyawan.</p>
+            </div>
+
             <form method="post" action="{{ route('employees.store') }}">
                 @csrf
-                <div class="row g-3">
-                    <div class="col-md-6">
-                        <label class="form-label" for="employee_id">Employee ID</label>
-                        <input id="employee_id" name="employee_id" class="form-control" value="{{ old('employee_id') }}" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="form-label" for="full_name">Nama</label>
-                        <input id="full_name" name="full_name" class="form-control" value="{{ old('full_name') }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label" for="department">Department</label>
-                        <input id="department" name="department" class="form-control" value="{{ old('department') }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label" for="job_role">Position</label>
-                        <input id="job_role" name="job_role" class="form-control" value="{{ old('job_role') }}" required>
-                    </div>
-                    <div class="col-md-4">
-                        <label class="form-label" for="attrition_risk_level">Risk</label>
-                        <select id="attrition_risk_level" name="attrition_risk_level" class="form-select" required>
-                            <option value="0" @selected(old('attrition_risk_level') === '0')>Low Risk</option>
-                            <option value="1" @selected(old('attrition_risk_level') === '1')>Medium Risk</option>
-                            <option value="2" @selected(old('attrition_risk_level') === '2')>High Risk</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="age">Age</label>
-                        <input id="age" type="number" min="15" max="80" name="age" class="form-control" value="{{ old('age') }}">
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="gender">Gender</label>
-                        <input id="gender" name="gender" class="form-control" value="{{ old('gender') }}">
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="monthly_income">Monthly Income</label>
-                        <input id="monthly_income" type="number" min="0" step="0.01" name="monthly_income" class="form-control" value="{{ old('monthly_income') }}">
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="monthly_work_hours">Monthly Hours</label>
-                        <input id="monthly_work_hours" type="number" min="0" max="744" step="0.01" name="monthly_work_hours" class="form-control" value="{{ old('monthly_work_hours') }}">
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="job_satisfaction">Job Satisfaction</label>
-                        <input id="job_satisfaction" type="number" min="0" max="5" step="0.01" name="job_satisfaction" class="form-control" value="{{ old('job_satisfaction') }}">
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="work_life_balance">Work Life Balance</label>
-                        <input id="work_life_balance" type="number" min="0" max="5" step="0.01" name="work_life_balance" class="form-control" value="{{ old('work_life_balance') }}">
-                    </div>
-                    <div class="col-md-3">
-                        <label class="form-label" for="projects_count">Projects</label>
-                        <input id="projects_count" type="number" min="0" max="999" name="projects_count" class="form-control" value="{{ old('projects_count') }}">
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" name="overtime" value="1" id="overtime" @checked(old('overtime'))>
-                            <label class="form-check-label" for="overtime">Overtime</label>
+
+                {{-- Informasi Dasar --}}
+                <section class="form-section mb-4">
+                    <h3 class="form-section-title">Informasi Dasar</h3>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label class="form-label fw-semibold" for="employee_id">Employee ID</label>
+                            <input id="employee_id" name="employee_id" class="form-control" placeholder="Contoh: EMP-0001" value="{{ old('employee_id') }}" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label class="form-label fw-semibold" for="full_name">Nama</label>
+                            <input id="full_name" name="full_name" class="form-control" placeholder="Nama lengkap karyawan" value="{{ old('full_name') }}" required>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="form-label fw-semibold" for="age">Age</label>
+                            <input id="age" type="number" min="15" max="80" name="age" class="form-control" placeholder="Usia" value="{{ old('age') }}">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="form-label fw-semibold" for="gender">Gender</label>
+                            <input id="gender" name="gender" class="form-control" placeholder="Male / Female" value="{{ old('gender') }}">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="form-label fw-semibold" for="monthly_income">Monthly Income</label>
+                            <input id="monthly_income" type="number" min="0" step="0.01" name="monthly_income" class="form-control" placeholder="Rp" value="{{ old('monthly_income') }}">
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <label class="form-label fw-semibold" for="monthly_work_hours">Monthly Hours</label>
+                            <input id="monthly_work_hours" type="number" min="0" max="744" step="0.01" name="monthly_work_hours" class="form-control" placeholder="Jam/bulan" value="{{ old('monthly_work_hours') }}">
                         </div>
                     </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">
-                            <i class="bi bi-save me-1"></i> Simpan ke MySQL
-                        </button>
+                </section>
+
+                {{-- Informasi Pekerjaan --}}
+                <section class="form-section mb-4">
+                    <h3 class="form-section-title">Informasi Pekerjaan</h3>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-4">
+                            <label class="form-label fw-semibold" for="department">Department</label>
+                            <input id="department" name="department" class="form-control" placeholder="Contoh: Human Resources" value="{{ old('department') }}" required>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label fw-semibold" for="job_role">Position</label>
+                            <input id="job_role" name="job_role" class="form-control" placeholder="Contoh: HR Analyst" value="{{ old('job_role') }}" required>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label fw-semibold" for="attrition_risk_level">Risk</label>
+                            <select id="attrition_risk_level" name="attrition_risk_level" class="form-select" required>
+                                <option value="0" @selected(old('attrition_risk_level') === '0')>Low Risk</option>
+                                <option value="1" @selected(old('attrition_risk_level') === '1')>Medium Risk</option>
+                                <option value="2" @selected(old('attrition_risk_level') === '2')>High Risk</option>
+                            </select>
+                        </div>
                     </div>
+                </section>
+
+                {{-- Informasi Performa --}}
+                <section class="form-section mb-4">
+                    <h3 class="form-section-title">Informasi Performa</h3>
+                    <div class="row g-3 align-items-end">
+                        <div class="col-12 col-md-4">
+                            <label class="form-label fw-semibold" for="job_satisfaction">Job Satisfaction</label>
+                            <input id="job_satisfaction" type="number" min="0" max="5" step="0.01" name="job_satisfaction" class="form-control" placeholder="0 - 5" value="{{ old('job_satisfaction') }}">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label fw-semibold" for="work_life_balance">Work Life Balance</label>
+                            <input id="work_life_balance" type="number" min="0" max="5" step="0.01" name="work_life_balance" class="form-control" placeholder="0 - 5" value="{{ old('work_life_balance') }}">
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <label class="form-label fw-semibold" for="projects_count">Projects</label>
+                            <input id="projects_count" type="number" min="0" max="999" name="projects_count" class="form-control" placeholder="Jumlah proyek" value="{{ old('projects_count') }}">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-switch mt-2">
+                                <input class="form-check-input" type="checkbox" role="switch" name="overtime" value="1" id="overtime" @checked(old('overtime'))>
+                                <label class="form-check-label fw-semibold" for="overtime">Overtime</label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="d-flex justify-content-end gap-2 pt-2 border-top">
+                    <button type="reset" class="btn btn-outline-secondary">
+                        <i class="bi bi-arrow-counterclockwise me-1"></i> Reset
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bi bi-save me-1"></i> Simpan ke MySQL
+                    </button>
                 </div>
             </form>
         </div>

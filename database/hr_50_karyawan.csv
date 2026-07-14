@@ -1,0 +1,51 @@
+employee_id	full_name	gender	age	department	job_role	branch	education	marital_status	hire_date	termination_date	salary	performance_rating	job_satisfaction	overtime	work_mode	training_hours	absent_days	promotion_last_2_years	attrition
+EMP001	Employee 01	Male	31	Marketing	Senior Staff	Jakarta	Diploma	Married	2021-08-19	2025-05-23	17500000	2	5	Yes	Hybrid	8	7	Yes	Yes
+EMP002	Employee 02	Female	49	IT	Senior Staff	Jakarta	Master	Single	2024-03-07		6500000	2	5	Yes	Hybrid	53	4	Yes	No
+EMP003	Employee 03	Male	41	Finance	Staff	Medan	Master	Single	2024-05-27		22500000	3	5	Yes	Remote	7	6	No	No
+EMP004	Employee 04	Male	49	Operations	Senior Staff	Jakarta	Master	Married	2023-12-18		15000000	5	3	No	Remote	63	10	No	No
+EMP005	Employee 05	Female	26	IT	Staff	Medan	Master	Married	2021-03-25	2024-06-18	8500000	5	3	Yes	Hybrid	44	15	No	Yes
+EMP006	Employee 06	Female	27	Operations	Manager	Surabaya	Master	Married	2018-10-09		13500000	5	1	Yes	Remote	44	0	No	No
+EMP007	Employee 07	Female	32	HR	Senior Staff	Yogyakarta	Bachelor	Married	2021-12-26		24500000	2	1	No	Onsite	21	14	No	No
+EMP008	Employee 08	Female	39	HR	Senior Staff	Jakarta	Diploma	Single	2024-02-29		9000000	5	4	No	Onsite	29	0	No	No
+EMP009	Employee 09	Female	33	Marketing	Supervisor	Bandung	Master	Single	2024-08-10		13000000	4	2	Yes	Hybrid	71	12	No	No
+EMP010	Employee 10	Male	47	Sales	Senior Staff	Jakarta	Bachelor	Single	2022-06-23		8000000	5	1	No	Onsite	0	4	Yes	No
+EMP011	Employee 11	Female	23	Marketing	Supervisor	Yogyakarta	Diploma	Single	2022-01-29		7000000	3	2	No	Hybrid	59	15	No	No
+EMP012	Employee 12	Male	27	Marketing	Staff	Bandung	Master	Married	2021-07-01		9500000	2	3	No	Onsite	69	0	No	No
+EMP013	Employee 13	Female	38	Operations	Senior Staff	Medan	Diploma	Single	2019-01-08		21500000	4	3	Yes	Hybrid	29	6	No	No
+EMP014	Employee 14	Female	23	Sales	Supervisor	Surabaya	Diploma	Single	2021-12-27		5500000	4	3	No	Onsite	29	15	Yes	No
+EMP015	Employee 15	Male	35	Operations	Staff	Yogyakarta	Master	Single	2021-10-15		20000000	2	3	No	Hybrid	22	13	No	No
+EMP016	Employee 16	Male	47	HR	Manager	Bandung	Master	Married	2018-12-22	2020-03-06	19500000	5	2	Yes	Remote	44	4	Yes	Yes
+EMP017	Employee 17	Male	22	IT	Supervisor	Bandung	Bachelor	Single	2018-03-29		8000000	3	2	No	Remote	41	8	No	No
+EMP018	Employee 18	Male	25	Sales	Senior Staff	Medan	Diploma	Single	2019-06-21	2020-10-23	16000000	5	5	No	Onsite	18	15	Yes	Yes
+EMP019	Employee 19	Female	25	IT	Staff	Medan	Bachelor	Single	2024-03-29	2025-10-21	15000000	5	5	Yes	Onsite	56	10	Yes	Yes
+EMP020	Employee 20	Female	50	Marketing	Senior Staff	Yogyakarta	Diploma	Married	2021-02-09		21000000	5	5	Yes	Onsite	50	14	No	No
+EMP021	Employee 21	Male	37	Operations	Supervisor	Bandung	Bachelor	Single	2018-10-25		18500000	2	3	Yes	Hybrid	28	3	No	No
+EMP022	Employee 22	Female	32	HR	Supervisor	Surabaya	Diploma	Married	2023-06-19		12000000	3	5	No	Onsite	43	14	No	No
+EMP023	Employee 23	Male	46	IT	Staff	Surabaya	Bachelor	Single	2018-03-16		15500000	4	1	Yes	Onsite	34	4	No	No
+EMP024	Employee 24	Male	47	Sales	Staff	Surabaya	Diploma	Single	2020-11-25		9500000	5	1	No	Hybrid	10	7	Yes	No
+EMP025	Employee 25	Female	29	Marketing	Senior Staff	Jakarta	Master	Single	2020-12-19		19500000	2	5	No	Onsite	20	8	Yes	No
+EMP026	Employee 26	Male	34	Finance	Supervisor	Jakarta	Bachelor	Single	2020-01-12		14500000	4	3	Yes	Onsite	2	6	No	No
+EMP027	Employee 27	Female	50	Marketing	Supervisor	Bandung	Diploma	Married	2020-10-03		8000000	5	5	No	Onsite	17	12	No	No
+EMP028	Employee 28	Female	30	Marketing	Supervisor	Medan	Diploma	Married	2018-08-11	2019-07-30	5000000	2	4	No	Onsite	58	5	Yes	Yes
+EMP029	Employee 29	Female	50	HR	Staff	Surabaya	Diploma	Married	2021-01-06		5000000	4	3	No	Onsite	0	10	No	No
+EMP030	Employee 30	Male	52	Finance	Staff	Bandung	Bachelor	Single	2018-12-10		13500000	3	5	Yes	Hybrid	2	9	No	No
+EMP031	Employee 31	Female	27	HR	Supervisor	Medan	Master	Single	2020-08-11		23500000	3	3	No	Onsite	65	13	Yes	No
+EMP032	Employee 32	Female	54	IT	Manager	Yogyakarta	Master	Single	2023-11-16	2025-02-10	23000000	2	1	Yes	Remote	2	7	No	Yes
+EMP033	Employee 33	Female	22	Finance	Staff	Surabaya	Diploma	Single	2020-12-16	2025-07-31	19500000	2	5	Yes	Onsite	58	15	No	Yes
+EMP034	Employee 34	Female	52	Finance	Supervisor	Medan	Master	Single	2018-11-11		14000000	2	1	Yes	Onsite	61	1	No	No
+EMP035	Employee 35	Female	28	Sales	Staff	Medan	Diploma	Married	2021-01-05		11500000	5	5	No	Onsite	60	0	No	No
+EMP036	Employee 36	Male	26	IT	Staff	Bandung	Master	Married	2023-02-23		21000000	5	4	No	Hybrid	16	8	Yes	No
+EMP037	Employee 37	Female	36	Sales	Supervisor	Bandung	Bachelor	Married	2022-02-04	2025-05-05	20500000	5	1	No	Hybrid	40	3	No	Yes
+EMP038	Employee 38	Female	42	Finance	Supervisor	Jakarta	Bachelor	Married	2018-01-08		15500000	5	2	Yes	Remote	9	11	No	No
+EMP039	Employee 39	Male	25	HR	Supervisor	Yogyakarta	Master	Married	2021-02-01		13500000	2	3	Yes	Onsite	47	13	Yes	No
+EMP040	Employee 40	Male	35	Operations	Supervisor	Yogyakarta	Diploma	Single	2022-06-27		7500000	2	4	No	Onsite	60	13	No	No
+EMP041	Employee 41	Female	41	IT	Senior Staff	Bandung	Diploma	Single	2021-02-28		13000000	4	2	No	Remote	63	7	No	No
+EMP042	Employee 42	Male	50	Finance	Senior Staff	Surabaya	Bachelor	Single	2021-09-25	2024-02-22	18500000	3	2	Yes	Onsite	52	12	No	Yes
+EMP043	Employee 43	Female	35	HR	Senior Staff	Jakarta	Bachelor	Single	2023-11-17		17000000	4	1	No	Hybrid	51	14	No	No
+EMP044	Employee 44	Female	23	IT	Staff	Yogyakarta	Master	Married	2021-07-02		9000000	2	4	No	Hybrid	31	3	Yes	No
+EMP045	Employee 45	Male	31	IT	Senior Staff	Bandung	Master	Single	2019-09-25		21500000	2	1	No	Remote	38	4	No	No
+EMP046	Employee 46	Male	49	Sales	Supervisor	Bandung	Master	Single	2023-12-04		8500000	2	3	Yes	Onsite	68	9	No	No
+EMP047	Employee 47	Female	42	Operations	Supervisor	Jakarta	Diploma	Single	2021-02-15		12500000	5	5	Yes	Hybrid	53	2	No	No
+EMP048	Employee 48	Female	49	Finance	Manager	Bandung	Diploma	Married	2020-07-22		16500000	3	1	No	Remote	64	2	Yes	No
+EMP049	Employee 49	Female	34	IT	Manager	Medan	Diploma	Single	2023-07-24		14500000	3	4	Yes	Hybrid	53	1	Yes	No
+EMP050	Employee 50	Male	25	Sales	Manager	Surabaya	Master	Single	2022-05-31	2023-03-30	11500000	2	4	Yes	Onsite	21	10	Yes	Yes
