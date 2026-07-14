@@ -50,6 +50,7 @@
                     <option value="2" @selected(request('risk_level') === '2')>High Risk</option>
                 </select>
             </div>
+            
             <div class="col-md-auto d-flex gap-2">
                 <button type="submit" class="btn btn-primary btn-sm"><i class="bi bi-funnel me-1"></i> Filter</button>
                 <a class="btn btn-outline-secondary btn-sm" href="{{ route('employees.index') }}"><i class="bi bi-x-circle me-1"></i> Reset</a>
@@ -96,7 +97,7 @@
                         <td><small class="text-muted">{{ $employee['recommendation'] }}</small></td>
                         @if ($isAdmin)
                             <td>
-                                <form method="post" action="{{ route('employees.destroy', $employee['id']) }}" data-confirm="Hapus data karyawan ini?">
+                                <form method="post" action="{{ route('employees.destroy', ['employee' => $employee['id']]) }}" data-confirm="Hapus data karyawan ini?">
                                     @csrf
                                     @method('delete')
                                     <button type="submit" class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
@@ -110,7 +111,25 @@
             </tbody>
         </table>
     </div>
-    {{ $employees->withQueryString()->links('partials.pagination') }}
+    <div class="d-flex justify-content-between align-items-center mt-2">
+        <div>
+            <form method="get" id="per-page-form" class="d-flex align-items-center gap-2">
+                @foreach(request()->except(['per_page','page']) as $k => $v)
+                    <input type="hidden" name="{{ $k }}" value="{{ $v }}">
+                @endforeach
+                <label class="small mb-0">Show</label>
+                <select name="per_page" class="form-select form-select-sm w-auto" onchange="this.form.submit()" style="min-width:80px;">
+                    @foreach([5, 10, 20] as $option)
+                        <option value="{{ $option }}" @selected((int) request('per_page', 10) === $option)>{{ $option }}</option>
+                    @endforeach
+                </select>
+                <span class="small text-muted">entries</span>
+            </form>
+        </div>
+        <div>
+            {{ $employees->withQueryString()->links('partials.pagination') }}
+        </div>
+    </div>
 </div>
 
 @if ($isAdmin)
