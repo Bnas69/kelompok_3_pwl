@@ -11,37 +11,125 @@ Project mata kuliah **Pemrograman Web Lanjut** untuk menganalisis risiko attriti
 | Tiara Adisa Marcianda | 411232040 |
 | Izatul Janah          | 411232019 |
 
-Penjelasan
+# 📊 Human Resource Analytics Dashboard
 
-Aplikasi **Human Resource Analytics Dashboard** adalah sistem analisis risiko _attrition_ (turnover) karyawan yang mengintegrasikan data dari berbagai sumber (CSV, JSON API, Google Sheets, MySQL eksternal) ke dalam satu dashboard interaktif. Sistem menyajikan visualisasi KPI, tren, serta rekomendasi berbasis aturan untuk membantu HR dalam pengambilan keputusan.
+## 📝 Deskripsi Aplikasi
 
-Stack / Teknis
+**Human Resource Analytics Dashboard** adalah aplikasi berbasis web yang dirancang untuk membantu tim Human Resource (HR) dalam menganalisis risiko **attrition (turnover) karyawan**. Aplikasi ini mengintegrasikan data dari berbagai sumber, seperti **CSV, JSON API, Google Sheets, dan MySQL eksternal**, kemudian menyajikannya dalam bentuk dashboard interaktif yang mudah dipahami.
+
+Dashboard menampilkan berbagai **Key Performance Indicator (KPI)**, visualisasi data, tren, insight, serta rekomendasi otomatis berbasis aturan (rule-based) untuk membantu manajemen dalam mengambil keputusan terkait pengelolaan sumber daya manusia.
+
+---
+
+## 🛠️ Teknologi yang Digunakan
 
 | Komponen | Teknologi |
-| Bahasa Pemrograman | PHP 8.3+ (Laravel 13), JavaScript (Vite 7, Chart.js 4.5, Bootstrap 5.3), Blade, CSS, SQL |
-| AI Recommendation | _Rule-based engine_ (bukan OpenAI) — rekomendasi ditentukan oleh logika if-else di `HrDashboardService::recommendation()` berdasarkan field `attrition_risk_level`, `job_satisfaction`, `monthly_work_hours`, `work_life_balance`, `monthly_income`, dan `projects_count` |
-| Database | MySQL (`hr_analytics`) dengan tabel utama `employees`, `hr_sync_logs`, `analytics_daily_data`, dan `hr_data_sources` |
+|----------|-----------|
+| **Framework** | Laravel 13 |
+| **Bahasa Pemrograman** | PHP 8.3+, JavaScript, SQL |
+| **Frontend** | Blade Template, Bootstrap 5.3, CSS |
+| **Build Tool** | Vite 7 |
+| **Visualisasi Data** | Chart.js 4.5 |
+| **Database** | MySQL |
+| **AI Recommendation** | Rule-Based Engine (If-Else) |
 
-Flow Aplikasi
+---
 
-Data Source (CSV URL / JSON API / Google Sheets / MySQL Eksternal / Local CSV)
-│
-▼
-HrDataSyncService (orchestrator sync, dijadwalkan tiap 15 menit)
-│
-▼
-MySQL Database (employees, hr_sync_logs, analytics_daily_data, dll.)
-│
-▼
-Service Layer
-├─ HrDashboardService → overview, KPI, charts, rekomendasi, insights
-└─ AnalyticsDataService → summary, trend, risiko departemen
-│
-▼
-Controller Layer (HrAnalyticsController, AnalyticsController, HrPageController)
-│
-▼
-View Layer (Blade + Chart.js + Bootstrap) → Dashboard interaktif
+## 🤖 Sistem Rekomendasi
+
+Aplikasi menggunakan **Rule-Based Recommendation Engine**, bukan model AI generatif seperti OpenAI.
+
+Rekomendasi dihasilkan berdasarkan logika **if-else** yang terdapat pada method:
+
+```php
+HrDashboardService::recommendation()
+```
+
+Logika rekomendasi memanfaatkan beberapa parameter, yaitu:
+
+- Attrition Risk Level
+- Job Satisfaction
+- Monthly Work Hours
+- Work Life Balance
+- Monthly Income
+- Projects Count
+
+Berdasarkan kombinasi nilai tersebut, sistem akan memberikan rekomendasi tindakan yang dapat membantu HR dalam mengurangi risiko turnover karyawan.
+
+---
+
+## 🗄️ Struktur Database
+
+Database menggunakan **MySQL** dengan nama database:
+
+```text
+hr_analytics
+```
+
+Tabel utama yang digunakan antara lain:
+
+- `employees`
+- `hr_sync_logs`
+- `analytics_daily_data`
+- `hr_data_sources`
+
+---
+
+## 🔄 Alur Kerja Aplikasi
+
+```text
+Data Source
+(CSV URL / JSON API / Google Sheets / MySQL Eksternal / Local CSV)
+                    │
+                    ▼
+        HrDataSyncService
+ (Sinkronisasi data setiap 15 menit)
+                    │
+                    ▼
+             MySQL Database
+(employees, hr_sync_logs, analytics_daily_data, dll.)
+                    │
+                    ▼
+             Service Layer
+     ├── HrDashboardService
+     │     • KPI Dashboard
+     │     • Overview
+     │     • Charts
+     │     • Insights
+     │     • Recommendation
+     │
+     └── AnalyticsDataService
+           • Summary
+           • Trend Analysis
+           • Department Risk
+                    │
+                    ▼
+           Controller Layer
+ ├── HrAnalyticsController
+ ├── AnalyticsController
+ └── HrPageController
+                    │
+                    ▼
+              View Layer
+      (Blade + Bootstrap + Chart.js)
+                    │
+                    ▼
+        Dashboard Interaktif HR Analytics
+```
+
+---
+
+## ✨ Fitur Utama
+
+- Dashboard interaktif dengan visualisasi data.
+- Monitoring Key Performance Indicator (KPI).
+- Analisis risiko attrition karyawan.
+- Insight otomatis berdasarkan data HR.
+- Rekomendasi berbasis Rule-Based Engine.
+- Integrasi berbagai sumber data (CSV, JSON API, Google Sheets, MySQL).
+- Sinkronisasi data otomatis setiap 15 menit.
+- Visualisasi data menggunakan Chart.js.
+- Analisis tren dan performa departemen.
 
 Lokal
 
