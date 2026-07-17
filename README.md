@@ -11,9 +11,9 @@ Project mata kuliah **Pemrograman Web Lanjut** untuk menganalisis risiko attriti
 | Tiara Adisa Marcianda | 411232040 |
 | Izatul Janah          | 411232019 |
 
-# 📊 Human Resource Analytics Dashboard
+# Human Resource Analytics Dashboard
 
-## 📝 Deskripsi Aplikasi
+## Deskripsi Aplikasi
 
 **Human Resource Analytics Dashboard** adalah aplikasi berbasis web yang dirancang untuk membantu tim Human Resource (HR) dalam menganalisis risiko **attrition (turnover) karyawan**. Aplikasi ini mengintegrasikan data dari berbagai sumber, seperti **CSV, JSON API, Google Sheets, dan MySQL eksternal**, kemudian menyajikannya dalam bentuk dashboard interaktif yang mudah dipahami.
 
@@ -21,7 +21,7 @@ Dashboard menampilkan berbagai **Key Performance Indicator (KPI)**, visualisasi 
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## Teknologi yang Digunakan
 
 | Komponen | Teknologi |
 |----------|-----------|
@@ -35,7 +35,7 @@ Dashboard menampilkan berbagai **Key Performance Indicator (KPI)**, visualisasi 
 
 ---
 
-## 🤖 Sistem Rekomendasi
+## Sistem Rekomendasi
 
 Aplikasi menggunakan **Rule-Based Recommendation Engine**, bukan model AI generatif seperti OpenAI.
 
@@ -58,7 +58,7 @@ Berdasarkan kombinasi nilai tersebut, sistem akan memberikan rekomendasi tindaka
 
 ---
 
-## 🗄️ Struktur Database
+## Struktur Database
 
 Database menggunakan **MySQL** dengan nama database:
 
@@ -75,7 +75,7 @@ Tabel utama yang digunakan antara lain:
 
 ---
 
-## 🔄 Alur Kerja Aplikasi
+## Alur Kerja Aplikasi
 
 ```text
 Data Source
@@ -119,7 +119,7 @@ Data Source
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 - Dashboard interaktif dengan visualisasi data.
 - Monitoring Key Performance Indicator (KPI).
